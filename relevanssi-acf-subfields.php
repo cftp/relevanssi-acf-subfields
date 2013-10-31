@@ -81,7 +81,6 @@ class Relevanssi_ACF_Subfields {
 	 * @return null
 	 */
 	public function __construct() {
-		add_action( 'admin_init', array( $this, 'action_admin_init' ) );
 		add_filter( 'relevanssi_content_to_index', array( $this, 'filter_relevanssi_content_to_index' ), 10, 2 );
 
 		$this->version = 1;
@@ -89,18 +88,6 @@ class Relevanssi_ACF_Subfields {
 
 	// HOOKS
 	// =====
-
-	/**
-	 * Hooks the WP action admin_init
-	 *
-	 * @action admin_init
-	 *
-	 * @return void
-	 * @author Simon Wheatley
-	 **/
-	public function action_admin_init() {
-		$this->maybe_upgrade();
-	}
 
 	/**
 	 * Hooks the WP filter relevanssi_content_to_index
