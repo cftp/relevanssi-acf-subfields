@@ -13,10 +13,10 @@ Finds subfields from ACF and feeds them to the Relevanssi indexer so they're fin
 
 To have an ACF subfield, e.g. a Repeater, indexed, do this:
 
-# Go to the Relevanssi options
-# Scroll to "custom fields to index"
-# Add your fields in the format `[field_name]_%_[subfield_name]`, e.g. "sections_%_section_text"
-# Select "Build the Index", to recreate your Relevanssi index
+1. Go to the Relevanssi options
+2. Scroll to "custom fields to index"
+3. Add your fields in the format `[field_name]_%_[subfield_name]`, e.g. "sections_%_section_text"
+4. Select "Build the Index", to recreate your Relevanssi index
 
 ## Changelog
 
