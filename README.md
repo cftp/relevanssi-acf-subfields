@@ -20,7 +20,7 @@ To have an ACF subfield, e.g. a Repeater, indexed, do this:
 
 ## Changelog
 
-### 0.1 
+### 0.2 
 * BUGFIX: Fix typo in hook
 
 ### 0.1 
