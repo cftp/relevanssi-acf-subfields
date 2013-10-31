@@ -1,0 +1,16 @@
+{
+	"name"       : "cftp/relevanssi-acf-subfields",
+	"description": "Finds subfields from ACF and feeds them to the Relevanssi indexer so they're findable in search.",
+	"homepage"   : "https://github.com/cftp/relevanssi-acf-subfields/",
+	"type"       : "wordpress-plugin",
+	"license"    : "GPL-2.0+",
+	"authors"    : [
+		{
+			"name"    : "Code For The People Ltd",
+			"homepage": "https://codeforthepeople.com/"
+		}
+	],
+	"require": {
+		"composer/installers": "~1.0"
+	}
+}
