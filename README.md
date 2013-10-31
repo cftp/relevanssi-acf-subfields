@@ -3,6 +3,7 @@
 * Contributors: cftp
 * Requires at least: 3.6.1
 * Tested up to: 3.6.1
+* Stable tag: 0.2
 
 Finds subfields from ACF and feeds them to the Relevanssi indexer so they're findable in search.
 
@@ -19,6 +20,9 @@ To have an ACF subfield, e.g. a Repeater, indexed, do this:
 
 ## Changelog
 
-### 1.0 
+### 0.1 
+* BUGFIX: Fix typo in hook
+
+### 0.1 
 * First release
 

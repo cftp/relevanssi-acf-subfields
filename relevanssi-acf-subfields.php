@@ -4,7 +4,7 @@
 Plugin Name: Relevanssi: add ACF subfields to index
 Plugin URI: http://github.com/cftp/relevanssi-acf-subfields/
 Description: Finds subfields from ACF and feeds them to the Relevanssi indexer so they're findable in search
-Version: 0.1
+Version: 0.2
 Author: Code for the People Ltd
 Author URI: http://codeforthepeople.com/
 */
@@ -82,7 +82,7 @@ class Relevanssi_ACF_Subfields {
 	 */
 	public function __construct() {
 		add_action( 'admin_init', array( $this, 'action_admin_init' ) );
-		add_filter( 'relevanssi_content_to_index', array( $THIS, 'filter_relevanssi_content_to_index' ), 10, 2 );
+		add_filter( 'relevanssi_content_to_index', array( $this, 'filter_relevanssi_content_to_index' ), 10, 2 );
 
 		$this->version = 1;
 	}
