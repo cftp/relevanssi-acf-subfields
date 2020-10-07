@@ -113,7 +113,10 @@ class Relevanssi_ACF_Subfields {
 			$field_name = $matches[ 1 ];
 			$subfield_name = $matches[ 2 ];
 			$num_fields = get_post_meta( $post->ID, $field_name, true );
-			for ( $i = 0; $i < $num_fields; $i++ ) {
+			// Check if get_post_meta() returns something;
+			if(!$num_fields)
+				continue;
+			for ( $i = 0; $i < count($num_fields); $i++ ) {
 				$raw = get_post_meta( $post->ID, "{$field_name}_{$i}_{$subfield_name}", true );
 				// Copied and pasted from Relevanssi
 				remove_shortcode('noindex');
